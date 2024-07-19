@@ -16,6 +16,10 @@ const AuthPage = () => {
           <h2 className="text-3xl font-semibold mb-4">Welcome to Synapse</h2>
           <p className="text-gray-600 mb-6">Use your email or another service to continue with Synapse</p>
           <button className="w-full flex items-center justify-center bg-white border border-gray-300 rounded-lg py-3 mb-4 hover:bg-gray-100">
+            <img src="./email.png" alt="E-mail" className="h-6 mr-2" />
+            Continue with E-Mail
+          </button>
+          <button className="w-full flex items-center justify-center bg-white border border-gray-300 rounded-lg py-3 mb-4 hover:bg-gray-100">
             <img src="./google.png" alt="Google" className="h-6 mr-2" />
             Continue with Google
           </button>
