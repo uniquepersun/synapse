@@ -1,12 +1,13 @@
-import AuthPage from "./Components/Auth/AuthPage";
-import Navbar from "./Components/Navbar/Navbar";
-import Sidebar from "./Components/Sidebar/Sidebar";
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './AppRouter';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Sidebar />
+      <BrowserRouter>
+        <AppRouter />
+      </BrowserRouter>
     </div>
   );
 }
