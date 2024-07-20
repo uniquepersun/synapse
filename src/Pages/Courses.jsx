@@ -3,21 +3,21 @@ import React from 'react';
 const courses = [
   {
     id: 1,
-    image: 'https://via.placeholder.com/150',
-    title: 'Course Title 1',
-    description: 'This is a description of Course 1.',
+    image: 'https://images.pexels.com/photos/838869/pexels-photo-838869.jpeg?auto=compress&cs=tinysrgb&w=600',
+    title: 'The fundamental concept of light!',
+    description: 'Always wanted to learn about light? This course is for you!',
   },
   {
     id: 2,
-    image: 'https://via.placeholder.com/150',
-    title: 'Course Title 2',
-    description: 'This is a description of Course 2.',
+    image: 'https://images.pexels.com/photos/6256066/pexels-photo-6256066.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Fear of Trigonometry',
+    description: 'We have seen many students who are afraid of trigonometry. This course is for you!',
   },
   {
     id: 3,
-    image: 'https://via.placeholder.com/150',
-    title: 'Course Title 3',
-    description: 'This is a description of Course 3.',
+    image: 'https://images.pexels.com/photos/2280571/pexels-photo-2280571.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Concept of chemicals',
+    description: 'Always hated Chemistry until this course came out!',
   },
 ];
 

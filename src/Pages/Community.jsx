@@ -3,21 +3,21 @@ import React from 'react';
 const posts = [
   {
     id: 1,
-    image: 'https://via.placeholder.com/150',
-    title: 'Post Title 1',
-    description: 'This is a description of post 1.',
+    image: 'https://images.pexels.com/photos/5905557/pexels-photo-5905557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'Aced my class today!',
+    description: 'Had a test yesterday and I aced it! I am so happy!',
   },
   {
     id: 2,
-    image: 'https://via.placeholder.com/150',
-    title: 'Post Title 2',
-    description: 'This is a description of post 2.',
+    image: 'https://images.pexels.com/photos/4778341/pexels-photo-4778341.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'A really interesting book!',
+    description: 'I would suggest everyone to read this book!',
   },
   {
     id: 3,
-    image: 'https://via.placeholder.com/150',
-    title: 'Post Title 3',
-    description: 'This is a description of post 3.',
+    image: 'https://images.pexels.com/photos/5553080/pexels-photo-5553080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    title: 'My friend is not a good teacher!',
+    description: 'Do tell me if your friend is a good teacher! #NotAGoodTeacherButAGoodFriend',
   },
 ];
 
@@ -33,12 +33,12 @@ const Community = () => {
             <p className="text-gray-600 mb-4">{post.description}</p>
             <div className="flex items-center space-x-4">
               <button className="flex items-center space-x-1 text-gray-600 hover:text-purple-700">
-                <i className="fas fa-comment"></i>
-                <span>Comment</span>
-              </button>
-              <button className="flex items-center space-x-1 text-gray-600 hover:text-purple-700">
                 <i className="fas fa-thumbs-up"></i>
                 <span>Like</span>
+              </button>
+              <button className="flex items-center space-x-1 text-gray-600 hover:text-purple-700">
+                <i className="fas fa-comment"></i>
+                <span>Comment</span>
               </button>
               <button className="flex items-center space-x-1 text-gray-600 hover:text-purple-700">
                 <i className="fas fa-share"></i>

@@ -10,6 +10,12 @@ import Books from './Pages/Books';
 import Community from './Pages/Community';
 import Courses from './Pages/Courses';
 import Nts from './Components/Home/Nts';
+import PomodoroTimer from './Pages/Pomodoro';
+import TodoListPage from './Pages/ToDoList';
+import QuizPage from './Pages/QuizPage';
+import TipsPage from './Pages/TipsAndTricksPage';
+import ProfilePage from './Pages/ProfilePage';
+import SettingsPage from './Pages/Settings';
 
 const AppRouter = () => {
   return (
@@ -33,12 +39,12 @@ const AppRouter = () => {
         <Route path="books" element={<Books />} />
         <Route path="community" element={<Community />} />
         <Route path="courses" element={<Courses />} />
-        <Route path="todo" element={<div>To Do List Page</div>} />
-        <Route path="quizzes" element={<div>Quizzes Page</div>} />
-        <Route path="pomodoro" element={<div>Pomodoro Page</div>} />
-        <Route path="tips" element={<div>Tips and Tricks Page</div>} />
-        <Route path="profile" element={<div>Profile Page</div>} />
-        <Route path="settings" element={<div>Settings Page</div>} />
+        <Route path="todo" element={<TodoListPage/>} />
+        <Route path="quizzes" element={<QuizPage/>} />
+        <Route path="pomodoro" element={<PomodoroTimer/>} />
+        <Route path="tips" element={<TipsPage/>} />
+        <Route path="profile" element={<ProfilePage/>} />
+        <Route path="settings" element={<SettingsPage/>} />
       </Route>
 
       

@@ -3,21 +3,21 @@ import React from 'react';
 const books = [
   {
     id: 1,
-    image: 'https://via.placeholder.com/150',
-    title: 'Book Title 1',
-    description: 'This is a description of book 1.',
+    image: 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSDt_DCSLzJsdZgqqOu5BUrGNJL-8QClmTAr3EesT16yMYo1GAN',
+    title: 'A Short History of Nearly Everything',
+    description: 'A Short History of Nearly Everything by American-British author Bill Bryson is a popular science book that explains some areas of science, using easily accessible language that appeals more to the general public than many other books dedicated to the subject.',
   },
   {
     id: 2,
-    image: 'https://via.placeholder.com/150',
-    title: 'Book Title 2',
-    description: 'This is a description of book 2.',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ4WHB2cfH5WRRqGeYkHO4Ui_mimHhQIUVrwrapuFkqSw-KyZm',
+    title: 'The Elegant Universe',
+    description: 'The Elegant Universe: Superstrings, Hidden Dimensions, and the Quest for the Ultimate Theory is a book by Brian Greene published in 1999, which introduces string and superstring theory, and provides a comprehensive though non-technical assessment of the theory and some of its shortcomings.',
   },
   {
     id: 3,
-    image: 'https://via.placeholder.com/150',
-    title: 'Book Title 3',
-    description: 'This is a description of book 3.',
+    image: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRq524vrSAtMWqPTW2ObynqjTDnzKGbNtxF06kQkdoJutK8tvc3',
+    title: 'Love Triangle: The Life-changing Magic of Trigonometry',
+    description: "Maths Practice Geometry Problem Daily Exercises in Angle Circle, Length of the Rectangles... to Improve Geometry Skills for Enjoyment and Challenge ( Maths Skills Series Activity Book ) A good one!",
   },
 ];
 

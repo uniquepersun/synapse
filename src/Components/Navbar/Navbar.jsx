@@ -1,10 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <nav className="bg-white shadow-md py-2 px-4 flex justify-between items-center">
       <div className="flex items-center">
-        <img src="./logo.png" alt="Synapse" className="h-10" />
+        <Link to={'/'}>
+          <img src="./logo.png" alt="Synapse" className="h-10" />
+        </Link>
       </div>
       <div className="flex-1 mx-4">
         <div className="relative">
@@ -36,7 +39,11 @@ const Navbar = () => {
         <img src="./music.png" alt="Icon1" className="h-6 w-6 hover:bg-purple-100" />
         <img src="./notification.png" alt="Icon2" className="h-6 w-6 hover:bg-purple-100" />
         <img src="./dark.png" alt="Icon3" className="h-6 w-6 hover:bg-purple-100" />
-        <div className="w-8 h-8 rounded-full bg-gray-300 hover:bg-purple-100"></div>
+        <Link to="/auth">
+          <button className="bg-purple-500 text-white px-4 py-2 rounded-full hover:bg-purple-600">
+            Sign In
+          </button>
+        </Link>
       </div>
     </nav>
   );
