@@ -11,7 +11,7 @@ import Community from './Pages/Community';
 import Courses from './Pages/Courses';
 import Nts from './Components/Home/Nts';
 import PomodoroTimer from './Pages/Pomodoro';
-import TodoListPage from './Pages/ToDoList';
+import ToDoPage from './Pages/ToDoList';
 import QuizPage from './Pages/QuizPage';
 import TipsPage from './Pages/TipsAndTricksPage';
 import ProfilePage from './Pages/ProfilePage';
@@ -39,7 +39,7 @@ const AppRouter = () => {
         <Route path="books" element={<Books />} />
         <Route path="community" element={<Community />} />
         <Route path="courses" element={<Courses />} />
-        <Route path="todo" element={<TodoListPage/>} />
+        <Route path="todo" element={<ToDoPage/>} />
         <Route path="quizzes" element={<QuizPage/>} />
         <Route path="pomodoro" element={<PomodoroTimer/>} />
         <Route path="tips" element={<TipsPage/>} />
