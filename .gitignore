@@ -22,3 +22,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Ignored files
+dev.idx
+secrets.nix
+.env

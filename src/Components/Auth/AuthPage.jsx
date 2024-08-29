@@ -1,16 +1,49 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { createUserEmail, createUserGoogle } from '../../Backend/Auth.js';
 
 const AuthPage = () => {
   const [showEmailLogin, setShowEmailLogin] = useState(true);
+  const [email, setEmail] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+
 
   const handleSlide = () => {
     setShowEmailLogin(!showEmailLogin);
   };
 
+  const handleEmailChange = (elem) => {
+    elem.preventDefault();
+    setEmail(elem.target.value);
+  };
+
+  const handleUsernameChange = (elem) => {
+    elem.preventDefault();
+    setUsername(elem.target.value);
+  };
+
+  const handlePasswordChange = (elem) => {
+    elem.preventDefault();
+    setPassword(elem.target.value);
+  };
+
+  const handleSubmit = () => {
+    if (email.length === 0 || username.length === 0 || password.length === 0) {
+      alert("Please fill all the fields");
+      return;
+    } else {
+      createUserEmail(email, password, username)
+    }
+  };
+
+  const handleGoogle = () => {
+    createUserGoogle()
+  }
+
   useEffect(() => {
     handleSlide();
-  }, [])
+  }, []);
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100">
@@ -28,23 +61,32 @@ const AuthPage = () => {
           <div className="flex justify-center mb-8 gap-2">
             <img src="./logo.png" alt="Synapse" className="h-12" />
           </div>
-          <h2 className="text-3xl font-semibold mb-4">Welcome to Synapse</h2>
+          <h2 className="text-3xl font-semibold mb-4">Let's get started!</h2>
           <p className="text-gray-600 mb-6">Use your email to continue with Synapse</p>
           <div className="inputs flex flex-col gap-4">
-          <input
-            id="email"
-            type="text"
-            placeholder="Email"
-            className="w-full border rounded-lg py-3 px-4 focus:outline-none focus:border-purple-500"
-          />
-          <input
-            id="password"
-            type="text"
-            placeholder="Password"
-            className="w-full border rounded-lg py-3 px-4 focus:outline-none focus:border-purple-500"
-          />
+            <input
+              id="email"
+              type="text"
+              placeholder="Email"
+              onChange={handleEmailChange}
+              className="w-full border rounded-lg py-3 px-4 focus:outline-none focus:border-purple-500"
+            />
+            <input
+              id="username"
+              type="text"
+              placeholder="Username"
+              onChange={handleUsernameChange}
+              className="w-full border rounded-lg py-3 px-4 focus:outline-none focus:border-purple-500"
+            />
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              onChange={handlePasswordChange}
+              className="w-full border rounded-lg py-3 px-4 focus:outline-none focus:border-purple-500"
+            />
 
-          <button className='bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600'>Continue</button>
+            <button onClick={handleSubmit} className='bg-purple-500 text-white px-4 py-2 rounded-lg hover:bg-purple-600'>Continue</button>
           </div>
           <p className="text-gray-500 text-xs mt-6 text-center">
             By continuing, you agree to Synapse's <a href="#" className="underline">Terms of Use</a>. Read our <a href="#" className="underline">Privacy Policy</a>.
@@ -66,6 +108,7 @@ const AuthPage = () => {
             Continue with E-Mail
           </button>
           <button
+            onClick={handleGoogle}
             className="w-full flex items-center justify-center bg-white border border-gray-300 rounded-lg py-3 mb-4 hover:bg-gray-100"
           >
             <img src="./google.png" alt="Google" className="h-6 mr-2" />
@@ -92,4 +135,4 @@ const AuthPage = () => {
   );
 };
 
-export default AuthPage
+export default AuthPage;
