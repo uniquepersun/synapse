@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main-login-card {
+  overflow: hidden;
+  display: flex;
+}
+
+.login-options, .email-login {
+  transition: transform 0.2s ease-in-out;
+}
+
+.email-login{
+  margin-top: -40px;
+}
+
+.login-options {
+  transform: translateX(0);
+  position: relative;
+  z-index: 1;
+}
+
+
+.email-login.active {
+  transform: translateX(100%);
+}
+
+.email-login.notActive{
+  transform: translateX(400%);
+}
+
+@media (min-width: 1023px) {
+  .slide-right {
+    transform: translateX(-300%);
+  }
+}
+
+@media (max-width: 1023px) {
+  .image {
+    display: none;
+  }
+
+  .main-login-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-options, .email-login {
+    transform: translateX(0);
+  }
+
+  .login-options{
+    margin-top: -504px;
+  }
+
+  .email-login{
+    margin-top: 0px;
+  }
+
+  .login-options.slide-right{
+    transform: translate(-300%);
+  }
+
+  .email-login.active {
+    transform: translateX(0);
+  }
+
+  .email-login.notActive{
+    transform: translateX(400%);
+  }
+}

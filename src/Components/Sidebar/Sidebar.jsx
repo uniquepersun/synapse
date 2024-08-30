@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   return (
-    <div className="h-auto w-64 bg-white shadow-md border-2">
-      <ul className="flex flex-col space-y-4 p-4 text-purple-500">
+    <div className="h-auto w-64 bg-white shadow-md border-2 overflow-auto">
+      <ul className="flex flex-col space-y-3.5 p-4 text-purple-500">
         <li>
           <Link to="/messages" className="flex items-center space-x-2 p-2 hover:bg-purple-100 rounded">
             <i className="fas fa-comments"></i>
