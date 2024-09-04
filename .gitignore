@@ -27,3 +27,5 @@ dist-ssr
 dev.idx
 secrets.nix
 .env
+dev.nix
+package-lock.json
